@@ -1,7 +1,6 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-
 }
 
 @font-face{
@@ -14,29 +13,20 @@ body{
     flex-direction: row;
 }
 
-.leftSection, .leafImg{
+.leftSection{
+    background-image: url(./images/leaf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 30vw;
     height: 100vh;
-}
-
-.leafImg{
-    position: absolute;
-    z-index: -1;
-}
-
-.logoContainerBg{
-    position: absolute;
-    width: 30vw;
-    height: 135px;
-    top: 20vh;
-    background-color: black;
-    opacity: 0.5;
 }
 
 .logoContainer{
     position: absolute;
     width: 30vw;
     top: 21vh;
+    background-color: rgba(0,0,0,0.5);
     color: white;
     display: flex;
     justify-content: center;
@@ -72,9 +62,6 @@ a{
     background-color: whitesmoke;
     width: 70vw;
     height: 100vh;
-}
-
-p{
     font-family: helvetica;
 }
 
@@ -94,7 +81,6 @@ p{
 }
 
 .formContainer{
-    font-family: helvetica;
     position: absolute;
     top: 30vh;
     width: 70vw;
@@ -115,12 +101,12 @@ legend{
     font-size: 1.5rem;
 }
 
-.input1{
+.formRow{
     display: flex;
     gap: 100px;
 }
 
-.input2{
+.formGroup{
     display: flex;
     flex-direction: column;
     letter-spacing: 2px;
@@ -163,10 +149,10 @@ button{
 }
 
 .p4{
-    font-family: helvetica;
     position: relative;
     top: 100px;
     left: 40px;
+    width: 300px;
 }
 
 .login{
