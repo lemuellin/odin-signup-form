@@ -1,0 +1,175 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face{
+    font-family: ABC;
+    src: url(./font/Norse-Bold.otf);
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSection, .leafImg{
+    width: 30vw;
+    height: 100vh;
+}
+
+.leafImg{
+    position: absolute;
+    z-index: -1;
+}
+
+.logoContainerBg{
+    position: absolute;
+    width: 30vw;
+    height: 135px;
+    top: 20vh;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.logoContainer{
+    position: absolute;
+    width: 30vw;
+    top: 21vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.odinImg{
+    width: 70px;
+}
+
+h1{
+    padding-top: 20px;
+    font-family: ABC;
+    font-size: 80px;
+}
+
+span{
+    position: absolute;
+    width:30vw;
+    bottom: 5px;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+}
+
+a{
+    color:white;
+}
+
+
+.rightSection{
+    background-color: whitesmoke;
+    width: 70vw;
+    height: 100vh;
+}
+
+p{
+    font-family: helvetica;
+}
+
+.p1{
+    font-size: 20px;
+    padding: 10vh 100px 0px 100px;
+}
+
+.p2{
+    font-size: 20px;
+    padding: 0px 0px 50px 100px;
+}
+
+.p3{
+    font-size: 20px;
+    padding-left: 100px;
+}
+
+.formContainer{
+    font-family: helvetica;
+    position: absolute;
+    top: 30vh;
+    width: 70vw;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 5px 5px lightgray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+legend{
+    font-size: 1.5rem;
+}
+
+.input1{
+    display: flex;
+    gap: 100px;
+}
+
+.input2{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+input{
+    width: 300px;
+    height: 20px;
+    border: 2px solid #E5E7EB;
+}
+
+#lastName:focus{
+    border: 2px solid blue;
+    box-shadow: 0px 5px 5px lightgray;
+}
+
+/* NOT SURE */
+#pwd:invalid{
+    border: 2px solid red;
+    content: "*Passwords do not match";
+}
+
+#pwdConfirm:invalid{
+    border: 2px solid red; 
+}
+
+
+button{
+    position: relative;
+    top: 80px;
+    left: 40px;
+    padding: 20px 60px 20px 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.p4{
+    font-family: helvetica;
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+
+.login{
+    color: black;
+    text-decoration: none;
+}
